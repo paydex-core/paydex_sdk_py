@@ -1,0 +1,30 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pytest = "*"
+ply = "*"
+pytest-cov = "*"
+sphinx = "*"
+sphinx-rtd-theme = "*"
+sphinx-autodoc-typehints = "*"
+pytest-timeout = "*"
+pytest-asyncio = "*"
+
+[packages]
+crc16 = "*"
+pynacl = "*"
+requests = "*"
+aiohttp = "*"
+aiohttp-sse-client = "*"
+paydex-base-sseclient = "*"
+mnemonic = "*"
+toml = "*"
+
+[requires]
+python_version = "3.7"
+
+[pipenv]
+allow_prereleases = true

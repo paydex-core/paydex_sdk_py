@@ -1,0 +1,25 @@
+[run]
+source =
+    paydex_base_sdk/
+    tests/
+
+[report]
+omit =
+    paydex_base_sdk/xdr/*
+    paydex_base_sdk/vendor/*
+    tests/conftest.py
+
+exclude_lines =
+    pragma: no cover
+
+    def __repr__
+    def __str__
+    if self\.debug
+
+    raise AssertionError
+    raise NotImplementedError
+
+    pass
+
+    if 0:
+    if __name__ == .__main__.:
